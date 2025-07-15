@@ -1,7 +1,7 @@
-import { ImageResponse } from 'next/og';
-import LogoIcon from './icons/logo';
-import { join } from 'path';
 import { readFile } from 'fs/promises';
+import { ImageResponse } from 'next/og';
+import { join } from 'path';
+import LogoIcon from './icons/logo';
 
 export type Props = {
   title?: string;
@@ -17,7 +17,7 @@ export default async function OpengraphImage(
     ...props
   };
 
-  const file = await readFile(join(process.cwd(), './fonts/Inter-Bold.ttf'));
+  const file = await readFile(join(process.cwd(), './fonts/Geist-Bold.ttf'));
   const font = Uint8Array.from(file).buffer;
 
   return new ImageResponse(
@@ -34,7 +34,7 @@ export default async function OpengraphImage(
       height: 630,
       fonts: [
         {
-          name: 'Inter',
+          name: 'Geist',
           data: font,
           style: 'normal',
           weight: 700
