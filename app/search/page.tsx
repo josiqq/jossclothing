@@ -25,7 +25,7 @@ export default async function SearchPage(props: {
           {products.length === 0
             ? 'No se encontraron productos que coincidan'
             : `Mostrando ${products.length} ${resultsText} para `}
-          <span className="font-bold">&quot;{searchValue}&quot;</span>
+          <span className="font-bold text-black">&quot;{searchValue}&quot;</span>
         </p>
       ) : null}
       {products.length > 0 ? (
