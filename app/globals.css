@@ -13,6 +13,10 @@
   }
 }
 
+html {
+ color-scheme: dark light;
+}
+
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading='lazy'] {
     clip-path: inset(0.6px);
@@ -22,5 +26,5 @@
 a,
 input,
 button {
-  @apply focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-neutral-300 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50;
+  @apply focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-neutral-300 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50;
 }
