@@ -17,7 +17,7 @@ export default async function OpengraphImage(
     ...props
   };
 
-  const file = await readFile(join(process.cwd(), './fonts/Geist-Bold.ttf'));
+  const file = await readFile(join(process.cwd(), './fonts/Inter-Bold.ttf'));
   const font = Uint8Array.from(file).buffer;
 
   return new ImageResponse(
@@ -34,7 +34,7 @@ export default async function OpengraphImage(
       height: 630,
       fonts: [
         {
-          name: 'Geist',
+          name: 'Inter',
           data: font,
           style: 'normal',
           weight: 700
