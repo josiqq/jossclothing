@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
+import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import FooterMenu from 'components/layout/footer-menu';
-import LogoSquare from 'components/logo-square';
 import { getMenu } from 'lib/shopify';
 import { Suspense } from 'react';
 
@@ -19,7 +19,8 @@ export default async function Footer() {
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 border-t border-neutral-200 px-6 py-12 text-sm md:flex-row md:gap-12 md:px-4 min-[1320px]:px-0 dark:border-neutral-700">
         <div>
           <Link className="flex items-center gap-2 text-black md:pt-1 dark:text-white" href="/">
-            <LogoSquare size="sm" />
+            {/*<LogoSquare size="sm" />*/}
+            <ShoppingBagIcon className="h-6" />
             <span className="uppercase">{SITE_NAME}</span>
           </Link>
         </div>
@@ -46,6 +47,7 @@ export default async function Footer() {
             {copyrightName.length && !copyrightName.endsWith('.') ? '.' : ''} Todos los derechos reservados.
           </p>
           <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
+          <p>Faltaría agregar las redes de la empresa aquí</p>
           <p className="md:ml-auto">
             <a href="https://github.com/josiqq" className="text-black dark:text-white">
               Creado por JTE Informática y Software.
