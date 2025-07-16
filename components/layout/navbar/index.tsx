@@ -153,7 +153,7 @@ function OrdersButton() {
   return (
     <Link
       href="/mis-pedidos"
-      className="flex items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:text-black hover:bg-neutral-100 rounded-md transition-colors"
+      className="flex hidden md:flex items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:text-black hover:bg-neutral-100 rounded-md transition-colors"
       title="Mis Pedidos"
     >
       <OrdersIcon className="w-5 h-5" />
@@ -167,7 +167,7 @@ function WishlistButton() {
   return (
     <Link
       href="/wishlist"
-      className="flex items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:text-black hover:bg-neutral-100 rounded-md transition-colors"
+      className="flex hidden md:flex items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:text-black hover:bg-neutral-100 rounded-md transition-colors"
       title="Lista de Deseos"
     >
       <HeartIcon className="w-5 h-5" />
@@ -179,7 +179,7 @@ function WishlistButton() {
 // Componente para el menú de usuario
 function UserMenu() {
   return (
-    <div className="relative group">
+    <div className="relative hidden md:block group">
       <button className="flex items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:text-black hover:bg-neutral-100 rounded-md transition-colors">
         <UserIcon className="w-5 h-5" />
         <span className="hidden lg:inline">Mi Cuenta</span>
