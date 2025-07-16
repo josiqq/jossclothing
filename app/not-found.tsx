@@ -11,7 +11,7 @@ export default function NotFound() {
         href="/"
       >
         Volver a la página inicial
-      </button>
+      </a>
     </div>
   );
 }
