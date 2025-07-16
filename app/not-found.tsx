@@ -6,9 +6,9 @@ export default function NotFound() {
         La página que estás buscando no existe. Si crees que debería existir, por favor contacta
         con nosotros.
       </p>
-      <button
+      <a
         className="mx-auto mt-4 flex w-full items-center justify-center rounded-full bg-blue-600 p-4 tracking-wide text-white hover:opacity-90"
-        onClick={() => window.location.reload()}
+        href="/"
       >
         Volver a la página inicial
       </button>
