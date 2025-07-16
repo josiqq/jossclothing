@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import { CartProvider } from 'components/cart/cart-context';
 import { Navbar } from 'components/layout/navbar';
 import { ThemeProvider } from 'components/theme-provider';
@@ -50,6 +51,7 @@ export default async function RootLayout({
           </main>
         </CartProvider>
       </ThemeProvider>
+      <Analytics />
       </body>
     </html>
   );
